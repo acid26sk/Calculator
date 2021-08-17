@@ -8,9 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:columnCount="4"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:columnCount="4"
         android:textStyle="bold">
 
         <Button
@@ -18,124 +18,141 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_c"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp"
+            android:textColor="@color/red" />
 
         <Button
             android:id="@+id/key_plus_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_plus_minus"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_percent"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_split"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="@string/key_split" />
+            android:text="@string/key_split"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_7"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_8"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_9"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="@string/key_multiply" />
+            android:text="@string/key_multiply"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_4"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_5"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_6"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="@string/key_minus" />
+            android:text="@string/key_minus"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_1"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_2"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_3"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="@string/key_plus" />
+            android:text="@string/key_plus"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_0"
@@ -144,23 +161,26 @@
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
+            android:layout_marginRight="5dp"
             android:text="@string/key_0"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
             android:text="@string/key_dot"
-            android:layout_marginRight="5dp"/>
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_equal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="@string/key_equal" />
+            android:text="@string/key_equal"
+            android:textSize="24sp" />
 
 
     </GridLayout>
