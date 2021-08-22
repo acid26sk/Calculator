@@ -15,37 +15,45 @@
 
         <Button
             android:id="@+id/key_c"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_marginRight="5dp"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_c"
-            android:textSize="24sp"
-            android:textColor="@color/red" />
+            android:textColor="@color/red"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_plus_minus"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_marginRight="5dp"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_plus_minus"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_percent"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_marginRight="5dp"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_percent"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/key_split"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_split"
             android:textSize="24sp" />
 
@@ -78,9 +86,11 @@
 
         <Button
             android:id="@+id/key_multiply"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_multiply"
             android:textSize="24sp" />
 
@@ -113,9 +123,11 @@
 
         <Button
             android:id="@+id/key_minus"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_minus"
             android:textSize="24sp" />
 
@@ -148,9 +160,11 @@
 
         <Button
             android:id="@+id/key_plus"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_plus"
             android:textSize="24sp" />
 
@@ -176,9 +190,11 @@
 
         <Button
             android:id="@+id/key_equal"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/sea"
             android:text="@string/key_equal"
             android:textSize="24sp" />
 
