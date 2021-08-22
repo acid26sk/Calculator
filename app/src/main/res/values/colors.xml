@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#BF3B3B</color>
     <color name="sea">#34009688</color>
+    <color name="sea2">#009688</color>
 </resources>

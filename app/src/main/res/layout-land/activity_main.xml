@@ -23,9 +23,11 @@
                     android:id="@+id/editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/textView"
+                    android:enabled="false"
                     android:gravity="right"
-                    android:text="2"
-                    android:textSize="32sp" />
+                    android:textColor="@color/teal_700"
+                    android:textSize="48sp" />
 
             </LinearLayout>
 
@@ -40,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:text="1"
+                    android:textColor="@color/sea2"
                     android:textSize="24sp" />
 
             </LinearLayout>
@@ -56,7 +58,7 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center"
                 android:columnCount="4"
                 android:textStyle="bold">
 
@@ -73,25 +75,15 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/keyPlusMinus"
+                    android:id="@+id/keyBackSpace"
                     style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
                     android:layout_columnWeight="1"
                     android:layout_marginRight="5dp"
                     android:backgroundTint="@color/sea"
-                    android:text="@string/key_plus_minus"
-                    android:textSize="24sp" />
-
-                <Button
-                    android:id="@+id/keyPercent"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_percent"
+                    android:text="@string/key_backspace"
                     android:textSize="24sp" />
 
                 <Button

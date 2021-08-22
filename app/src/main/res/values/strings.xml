@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="key_c">C</string>
-    <string name="key_plus_minus">+/-</string>
-    <string name="key_percent">%</string>
+    <string name="key_backspace">\u232b</string>
     <string name="key_split">/</string>
     <string name="key_7">7</string>
     <string name="key_8">8</string>

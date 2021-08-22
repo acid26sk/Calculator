@@ -3,6 +3,7 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         binding.keyDot.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + ".");
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyZero.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "0");
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyOne.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "1");
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyTwo.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "2");
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyThree.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "3");
@@ -70,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyFour.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "4");
@@ -77,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyFive.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "5");
@@ -84,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keySix.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "6");
@@ -91,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keySeven.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "7");
@@ -98,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyEight.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "8");
@@ -105,11 +116,106 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.keyNine.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 binding.editText.setText(binding.editText.getText() + "9");
             }
         });
+
+        binding.keyPlus.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = PLUS;
+                binding.textView.setText(decimalFormat.format(valueOne) + "+");
+                binding.editText.setText(null);
+            }
+        });
+
+        binding.keyMinus.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = MINUS;
+                binding.textView.setText(decimalFormat.format(valueOne) + "-");
+                binding.editText.setText(null);
+            }
+        });
+
+        binding.keyMultiply.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = MULTIPLY;
+                binding.textView.setText(decimalFormat.format(valueOne) + "*");
+                binding.editText.setText(null);
+            }
+        });
+
+        binding.keySplit.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = SPLIT;
+                binding.textView.setText(decimalFormat.format(valueOne) + "/");
+                binding.editText.setText(null);
+            }
+        });
+
+        binding.keyEqual.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                binding.textView.setText(binding.textView.getText().toString() +
+                        decimalFormat.format(valueTwo) + " = " + decimalFormat.format(valueOne));
+                valueOne = Double.NaN;
+                CURRENT_ACTION = '0';
+            }
+        });
+
+        binding.keyBackSpace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (binding.editText.getText().length() > 0) {
+                    CharSequence currentText = binding.editText.getText();
+                    binding.editText.setText(currentText.subSequence(0, currentText.length() - 1));
+                } else {
+                    valueOne = Double.NaN;
+                    valueTwo = Double.NaN;
+                    binding.editText.setText("");
+                    binding.textView.setText("");
+                }
+            }
+        });
+
+
+    }
+
+    private void computeCalculation() {
+        if (!Double.isNaN(valueOne)) {
+            valueTwo = Double.parseDouble(binding.editText.getText().toString());
+            binding.editText.setText(null);
+
+            if (CURRENT_ACTION == PLUS)
+                valueOne = this.valueOne + valueTwo;
+            else if (CURRENT_ACTION == MINUS)
+                valueOne = this.valueOne - valueTwo;
+            else if (CURRENT_ACTION == MULTIPLY)
+                valueOne = this.valueOne * valueTwo;
+            else if (CURRENT_ACTION == SPLIT)
+                valueOne = this.valueOne / valueTwo;
+        } else {
+            try {
+                valueOne = Double.parseDouble(binding.editText.getText().toString());
+            } catch (Exception e) {
+            }
+        }
 
     }
 }
