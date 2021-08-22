@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Calculator</string>
+    <string name="app_name">Calculator</string>
     <string name="key_c">C</string>
     <string name="key_plus_minus">+/-</string>
     <string name="key_percent">%</string>

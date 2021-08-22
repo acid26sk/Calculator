@@ -4,6 +4,7 @@ plugins {
 
 android {
     compileSdk 31
+    dataBinding.enabled = true
 
     defaultConfig {
         applicationId "com.example.calculator"
@@ -25,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
