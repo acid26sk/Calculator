@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private static final char MULTIPLY = '*';
     private static final char SPLIT = '/';
 
+    private char CLEAR;
+
     private char CURRENT_ACTION;
 
     private double valueOne = Double.NaN;
@@ -192,6 +194,16 @@ public class MainActivity extends AppCompatActivity {
                     binding.editText.setText("");
                     binding.textView.setText("");
                 }
+            }
+        });
+
+        binding.keyC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                valueOne = Double.NaN;
+                valueTwo = Double.NaN;
+                binding.textView.setText("");
+                binding.editText.setText("");
             }
         });
 
