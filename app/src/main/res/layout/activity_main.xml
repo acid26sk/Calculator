@@ -72,11 +72,23 @@
                     style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_columnSpan="2"
+                    android:layout_columnSpan="1"
                     android:layout_columnWeight="1"
                     android:layout_marginRight="5dp"
                     android:backgroundTint="@color/sea"
                     android:text="@string/key_backspace"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/keyPlusMinus"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/sea"
+                    android:text="@string/key_plus_minus"
                     android:textSize="24sp" />
 
                 <Button

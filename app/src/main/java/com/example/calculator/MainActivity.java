@@ -1,11 +1,11 @@
 package com.example.calculator;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.example.calculator.databinding.ActivityMainBinding;
 
@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private static final char MINUS = '-';
     private static final char MULTIPLY = '*';
     private static final char SPLIT = '/';
-
-    private char CLEAR;
+    private char PLUSMINUS = '@';
 
     private char CURRENT_ACTION;
 
@@ -175,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 computeCalculation();
+                binding.editText.setText(binding.editText.getText() + decimalFormat.format(valueOne));
                 binding.textView.setText(binding.textView.getText().toString() +
                         decimalFormat.format(valueTwo) + " = " + decimalFormat.format(valueOne));
                 valueOne = Double.NaN;
@@ -207,6 +207,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding.keyPlusMinus.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = PLUSMINUS;
+                binding.editText.setText(decimalFormat.format(valueOne * (-1)));
+            }
+
+        });
+
     }
 
     private void computeCalculation() {
@@ -222,6 +233,8 @@ public class MainActivity extends AppCompatActivity {
                 valueOne = this.valueOne * valueTwo;
             else if (CURRENT_ACTION == SPLIT)
                 valueOne = this.valueOne / valueTwo;
+            else if (CURRENT_ACTION == PLUSMINUS)
+                valueOne = this.valueOne * (-1);
         } else {
             try {
                 valueOne = Double.parseDouble(binding.editText.getText().toString());
