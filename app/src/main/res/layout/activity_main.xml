@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/image"
+        android:background="@drawable/bgd_day"
         android:orientation="vertical">
 
         <LinearLayout
@@ -16,12 +16,14 @@
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@id/textView"
                 android:enabled="false"
+                android:fontFamily="@font/calculator"
                 android:gravity="right"
-                android:textColor="@color/teal_700"
-                android:textSize="48sp" />
+                android:textColor="@color/txt_edit"
+                android:textSize="48sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -34,17 +36,19 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/calculator"
                 android:gravity="right"
-                android:textColor="@color/sea2"
-                android:textSize="24sp" />
+                android:textColor="@color/txt_view"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="bottom"
             android:layout_margin="5dp"
             android:layout_weight="1">
 
@@ -57,190 +61,105 @@
 
                 <Button
                     android:id="@+id/keyC"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:backgroundTint="@color/sea"
+                    style="@style/ButtonOperations"
                     android:text="@string/key_c"
-                    android:textColor="@color/red"
-                    android:textSize="24sp" />
+                    android:textColor="@color/red" />
 
                 <Button
                     android:id="@+id/keyBackSpace"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnSpan="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_backspace"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:text="@string/key_backspace" />
 
                 <Button
                     android:id="@+id/keyPlusMinus"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnSpan="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_plus_minus"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:text="@string/key_plus_minus" />
 
                 <Button
                     android:id="@+id/keySplit"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_split"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/key_split" />
 
                 <Button
                     android:id="@+id/keySeven"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_7"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_7" />
 
                 <Button
                     android:id="@+id/keyEight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_8"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_8" />
 
                 <Button
                     android:id="@+id/keyNine"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_9"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_9" />
 
                 <Button
                     android:id="@+id/keyMultiply"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_multiply"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/key_multiply" />
 
                 <Button
                     android:id="@+id/keyFour"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_4"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_4" />
 
                 <Button
                     android:id="@+id/keyFive"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_5"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_5" />
 
                 <Button
                     android:id="@+id/keySix"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_6"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_6" />
 
                 <Button
                     android:id="@+id/keyMinus"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_minus"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/key_minus" />
 
                 <Button
                     android:id="@+id/keyOne"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_1"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_1" />
 
                 <Button
                     android:id="@+id/keyTwo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_2"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_2" />
 
                 <Button
                     android:id="@+id/keyThree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_3"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_3" />
 
                 <Button
                     android:id="@+id/keyPlus"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_plus"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/key_plus" />
 
                 <Button
                     android:id="@+id/keyZero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/ButtonNumbers"
                     android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_0"
-                    android:textSize="24sp" />
+                    android:text="@string/key_0" />
 
                 <Button
                     android:id="@+id/keyDot"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_marginRight="5dp"
-                    android:text="@string/key_dot"
-                    android:textSize="24sp" />
+                    style="@style/ButtonNumbers"
+                    android:text="@string/key_dot" />
 
                 <Button
                     android:id="@+id/keyEqual"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:backgroundTint="@color/sea"
-                    android:text="@string/key_equal"
-                    android:textSize="24sp" />
+                    style="@style/ButtonOperations"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/key_equal" />
 
 
             </GridLayout>

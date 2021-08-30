@@ -10,4 +10,10 @@
     <color name="red">#BF3B3B</color>
     <color name="sea">#34009688</color>
     <color name="sea2">#009688</color>
+    <color name="btn_numb">#6C6C6C</color>
+    <color name="btn_oper">#7E6C6C6C</color>
+    <color name="btn_text_numb">#FF9800</color>
+    <color name="btn_text_oper">#3F51B5</color>
+    <color name="txt_view">#B35003</color>
+    <color name="txt_edit">#853B02</color>
 </resources>
