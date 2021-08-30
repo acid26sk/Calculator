@@ -41,7 +41,7 @@
                 android:fontFamily="@font/calculator"
                 android:gravity="right"
                 android:textColor="@color/txt_view"
-                android:textSize="@dimen/txt_size_one"
+                android:textSize="@dimen/txt_size_three"
                 android:textStyle="bold" />
 
         </LinearLayout>

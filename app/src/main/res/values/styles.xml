@@ -12,6 +12,7 @@
         <item name="android:textColor">@color/btn_text_numb</item>
         <item name="android:gravity">center</item>
         <item name="cornerRadius">@dimen/rad</item>
+        <item name="android:padding">0dp</item>
     </style>
 
     <style name="Button.Operations">
