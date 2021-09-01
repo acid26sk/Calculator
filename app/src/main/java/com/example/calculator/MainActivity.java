@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     private DecimalFormat decimalFormat;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
