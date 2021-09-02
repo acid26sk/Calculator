@@ -2,7 +2,10 @@ package com.example.calculator;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -219,6 +222,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void computeCalculation() {
         if (!Double.isNaN(valueOne)) {
             valueTwo = Double.parseDouble(binding.editText.getText().toString());
@@ -242,4 +246,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        menu.add("Настройки");
+        return true;
+    }
+
+
 }

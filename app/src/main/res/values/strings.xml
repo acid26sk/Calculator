@@ -19,4 +19,6 @@
     <string name="key_dot">.</string>
     <string name="key_equal">=</string>
     <string name="key_plus_minus">+/-</string>
+    <string name="day_theme">dayTheme</string>
+    <string name="night_theme">nightTheme</string>
 </resources>
