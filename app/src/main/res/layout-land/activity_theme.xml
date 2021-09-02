@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Button"
+            android:layout_width="@dimen/max_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrg_five"
+            android:text="@string/day_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Button"
+            android:layout_width="@dimen/max_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrg_five"
+            android:text="@string/night_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Button"
+            android:layout_width="@dimen/min_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrg_five"
+            android:text="@string/btn_back" />
+
+    </LinearLayout>
+
+</LinearLayout>
