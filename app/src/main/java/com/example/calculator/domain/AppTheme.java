@@ -5,7 +5,8 @@ import com.example.calculator.R;
 public enum AppTheme {
 
     DAY(R.style.ThemesDay, "day"),
-    NIGHT(R.style.ThemesNight,"night");
+    NIGHT(R.style.ThemesNight,"night"),
+    MINT(R.style.ThemesMint,"mint");
 
     private final int theme;
     private final String key;

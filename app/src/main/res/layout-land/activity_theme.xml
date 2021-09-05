@@ -11,18 +11,28 @@
         android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDay"
             android:layout_width="@dimen/max_btn"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/mrg_five"
             android:text="@string/day_theme" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNight"
             android:layout_width="@dimen/max_btn"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/mrg_five"
             android:text="@string/night_theme" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMint"
+            android:layout_width="@dimen/max_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrg_five"
+            android:text="@string/mint_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
             android:layout_width="@dimen/min_btn"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/mrg_five"

@@ -19,14 +19,24 @@
         <item name="android:textColor">@color/btn_text_numb</item>
     </style>
 
+    <style name="Button.Mint">
+        <item name="backgroundTint">@color/pink</item>
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+
     <style name="ThemeDay" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="materialButtonStyle">@style/Button</item>
-        <item name="android:windowBackground">@drawable/bgd_night</item>
+        <item name="android:windowBackground">@drawable/bgd_day</item>
     </style>
 
     <style name="ThemesNight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="materialButtonStyle">@style/Button.Operations</item>
         <item name="android:windowBackground">@drawable/bgd_night</item>
+    </style>
+
+    <style name="ThemesMint" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="materialButtonStyle">@style/Button.Mint</item>
+        <item name="android:windowBackground">@drawable/bgd_mint</item>
     </style>
 
 </resources>

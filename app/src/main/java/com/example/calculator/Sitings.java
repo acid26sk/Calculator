@@ -39,6 +39,14 @@ public class Sitings extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnMint).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                storage.setAppTheme(AppTheme.MINT);
+                recreate();
+            }
+        });
+
         findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
