@@ -58,107 +58,89 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:columnCount="4"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                android:theme="@style/Button">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyC"
-                    style="@style/Button.Operations"
                     android:text="@string/key_c"
                     android:textColor="@color/red" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyBackSpace"
-                    style="@style/Button.Operations"
                     android:text="@string/key_backspace" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyPlusMinus"
-                    style="@style/Button.Operations"
                     android:text="@string/key_plus_minus" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySplit"
-                    style="@style/Button.Operations"
                     android:layout_marginEnd="0dp"
                     android:text="@string/key_split" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySeven"
-                    style="@style/Button"
                     android:text="@string/key_7" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyEight"
-                    style="@style/Button"
                     android:text="@string/key_8" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyNine"
-                    style="@style/Button"
                     android:text="@string/key_9" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyMultiply"
-                    style="@style/Button.Operations"
                     android:layout_marginEnd="0dp"
                     android:text="@string/key_multiply" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyFour"
-                    style="@style/Button"
                     android:text="@string/key_4" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyFive"
-                    style="@style/Button"
                     android:text="@string/key_5" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySix"
-                    style="@style/Button"
                     android:text="@string/key_6" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyMinus"
-                    style="@style/Button.Operations"
                     android:layout_marginEnd="0dp"
                     android:text="@string/key_minus" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyOne"
-                    style="@style/Button"
                     android:text="@string/key_1" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyTwo"
-                    style="@style/Button"
                     android:text="@string/key_2" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyThree"
-                    style="@style/Button"
                     android:text="@string/key_3" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyPlus"
-                    style="@style/Button.Operations"
                     android:layout_marginEnd="0dp"
                     android:text="@string/key_plus" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyZero"
-                    style="@style/Button"
                     android:layout_columnSpan="2"
                     android:text="@string/key_0" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyDot"
-                    style="@style/Button"
                     android:text="@string/key_dot" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyEqual"
-                    style="@style/Button.Operations"
                     android:layout_marginEnd="0dp"
                     android:text="@string/key_equal" />
 
