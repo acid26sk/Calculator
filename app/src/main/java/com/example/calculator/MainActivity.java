@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.example.calculator.databinding.ActivityMainBinding;
+import com.example.calculator.storage.ThemeStorage;
 
 import java.text.DecimalFormat;
 
@@ -35,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        ThemeStorage storage = new ThemeStorage(this);
+
+        setTheme(storage.getAppTheme().getTheme());
 
 
         decimalFormat = new DecimalFormat("#.##########");
