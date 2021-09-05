@@ -7,4 +7,5 @@
     <dimen name="rad">15dp</dimen>
     <dimen name="max_btn">300dp</dimen>
     <dimen name="min_btn">200dp</dimen>
+    <dimen name="stroke">1dp</dimen>
 </resources>

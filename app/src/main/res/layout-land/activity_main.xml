@@ -64,91 +64,104 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:columnCount="4"
-                android:textStyle="bold"
-                android:theme="@style/Button">
+                android:textStyle="bold">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyC"
                     android:text="@string/key_c"
-                    android:textColor="@color/red" />
+                    android:textColor="@color/red"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyBackSpace"
-                    android:text="@string/key_backspace" />
+                    android:text="@string/key_backspace"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyPlusMinus"
-                    android:text="@string/key_plus_minus" />
+                    android:text="@string/key_plus_minus"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySplit"
-                    android:layout_marginEnd="0dp"
-                    android:text="@string/key_split" />
+                    android:text="@string/key_split"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySeven"
-                    android:text="@string/key_7" />
+                    android:text="@string/key_7"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyEight"
-                    android:text="@string/key_8" />
+                    android:text="@string/key_8"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyNine"
-                    android:text="@string/key_9" />
+                    android:text="@string/key_9"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyMultiply"
-                    android:layout_marginEnd="0dp"
-                    android:text="@string/key_multiply" />
+                    android:text="@string/key_multiply"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyFour"
-                    android:text="@string/key_4" />
+                    android:text="@string/key_4"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyFive"
-                    android:text="@string/key_5" />
+                    android:text="@string/key_5"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keySix"
-                    android:text="@string/key_6" />
+                    android:text="@string/key_6"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyMinus"
-                    android:layout_marginEnd="0dp"
-                    android:text="@string/key_minus" />
+                    android:text="@string/key_minus"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyOne"
-                    android:text="@string/key_1" />
+                    android:text="@string/key_1"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyTwo"
-                    android:text="@string/key_2" />
+                    android:text="@string/key_2"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyThree"
-                    android:text="@string/key_3" />
+                    android:text="@string/key_3"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyPlus"
-                    android:layout_marginEnd="0dp"
-                    android:text="@string/key_plus" />
+                    android:text="@string/key_plus"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyZero"
                     android:layout_columnSpan="2"
-                    android:text="@string/key_0" />
+                    android:text="@string/key_0"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyDot"
-                    android:text="@string/key_dot" />
+                    android:text="@string/key_dot"
+                    android:layout_columnWeight="1"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/keyEqual"
-                    android:layout_marginEnd="0dp"
-                    android:text="@string/key_equal" />
+                    android:text="@string/key_equal"
+                    android:layout_columnWeight="1"/>
 
 
             </GridLayout>
