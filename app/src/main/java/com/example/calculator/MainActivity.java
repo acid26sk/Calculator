@@ -1,13 +1,17 @@
 package com.example.calculator;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.example.calculator.databinding.ActivityMainBinding;
+import com.example.calculator.storage.ThemeStorage;
 
 import java.text.DecimalFormat;
 
@@ -28,10 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
     private DecimalFormat decimalFormat;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
+        ThemeStorage storage = new ThemeStorage(this);
+
+        setTheme(storage.getAppTheme().getTheme());
+
 
         decimalFormat = new DecimalFormat("#.##########");
 
@@ -220,6 +229,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_settings) {
+            Intent a = new Intent(getApplicationContext(), Sitings.class);
+            startActivity(a);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void computeCalculation() {
         if (!Double.isNaN(valueOne)) {
             valueTwo = Double.parseDouble(binding.editText.getText().toString());
@@ -243,4 +271,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 }
